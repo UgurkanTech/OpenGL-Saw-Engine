@@ -16,7 +16,7 @@ public:
 		//textureNames.push_back(Asset(TEXTURE, "oak", "resources/textures/pbr/oak"));
 		assetNames.push_back(Asset(TEXTURE, "button", "resources/textures/button.png"));
 
-		HDRBackgroundPath = "resources/textures/hdr/lilienstein_4k.hdr";
+		HDRBackgroundPath = "resources/textures/hdr/lilienstein_2k.hdr";
 
 		loadTextureNames(true);
 		
