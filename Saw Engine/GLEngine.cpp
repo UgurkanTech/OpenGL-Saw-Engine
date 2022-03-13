@@ -93,6 +93,8 @@ void GLEngine::initShaders() {
 	shaders.sprite->use();
 	glUniformMatrix4fv(glGetUniformLocation(shaders.sprite->ID, "projection"), 1, GL_FALSE, glm::value_ptr(projection2));
 
+
+
 }
 
 int GLEngine::initText() {
@@ -615,7 +617,7 @@ void GLEngine::renderGraphics() {
 	//renderer->renderCube();
 
 	//GUI
-	shaders.textShader->use();
+	
 	renderer->renderText(shaders.textShader, "FPS:" + to_string(fps) + " Ticks:" + to_string(ticks), SCR_WIDTH - 150, 15, 0.7f, glm::vec3(0.3, 0.7f, 0.9f));
 	gui->drawGUI();
 }

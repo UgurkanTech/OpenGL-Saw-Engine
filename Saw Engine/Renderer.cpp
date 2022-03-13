@@ -58,6 +58,7 @@ void Renderer::renderText(Shader* shader, std::string text, float x, float y, fl
 	// activate corresponding render state
 	shader->use();
 	glUniform3f(glGetUniformLocation(shader->ID, "textColor"), color.x, color.y, color.z);
+
 	glActiveTexture(GL_TEXTURE0);
 	glBindVertexArray(VAO);
 
